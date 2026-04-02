@@ -4,7 +4,6 @@ require("./config/db");
 
 const app = express(); 
 
-// middleware
 app.use(express.json());
 
 // routes
@@ -17,6 +16,7 @@ app.use("/records", recordRoutes);
 
 const dashboardRoutes = require("./routes/dashboardRoutes");
 app.use("/dashboard", dashboardRoutes);
+
 // test route
 app.get("/", (req, res) => {
   res.send("Backend is running 🚀");

@@ -68,3 +68,27 @@ DB_NAME=finance_db
   "totalExpense": 200,
   "netBalance": 4800
 }
+
+## 🧪 Sample API Usage
+
+### Create Record
+POST /records
+
+Headers:
+role: admin
+
+Body:
+{
+  "user_id": 1,
+  "amount": 500,
+  "type": "expense",
+  "category": "food",
+  "date": "2026-04-02",
+  "notes": "lunch"
+}
+
+### Filter Records
+GET /records?type=income
+
+Headers:
+role: analyst
