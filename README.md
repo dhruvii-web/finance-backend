@@ -92,3 +92,24 @@ GET /records?type=income
 
 Headers:
 role: analyst
+
+
+## How to Run
+
+1. Clone the repo  
+2. Install dependencies  
+   npm install  
+3. Create `.env` file using `.env.example`  
+4. Start server  
+   node src/app.js  
+
+
+## API Endpoints
+
+POST /users  
+GET /users  
+
+POST /records  
+GET /records  
+
+GET /dashboard
